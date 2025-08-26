@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Emails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-envelope-open-text me-2"></i>
+                Classificador de Emails
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card p-4 mb-4">
+                    <h2 class="text-center mb-4">Classifique seus emails automaticamente</h2>
+                    <p class="text-center text-muted">
+                        Nossa solução utiliza inteligência artificial para classificar emails em <strong>Produtivos</strong> ou <strong>Improdutivos</strong> 
+                        e sugerir respostas automáticas adequadas.
+                    </p>
+                    
+                    <div class="upload-area mt-4" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt fa-3x text-muted mb-3"></i>
+                        <h5>Arraste e solte seu email aqui</h5>
+                        <p class="text-muted">ou</p>
+                        <label for="fileInput" class="btn btn-primary">Selecione um arquivo</label>
+                        <input type="file" id="fileInput" class="d-none" accept=".txt,.pdf">
+                        <p class="text-muted mt-2">Formatos suportados: .txt, .pdf</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-center">Ou cole o texto do email abaixo:</p>
+                        <textarea class="form-control" id="emailText" rows="5" placeholder="Cole o conteúdo do email aqui..."></textarea>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary btn-lg" id="processBtn" disabled>
+                            <i class="fas fa-cogs me-2"></i>Processar Email
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-muted">Exemplos para testar:</p>
+                        <div class="example-emails">
+                            <div class="card mb-2 p-3" data-email="Olá, gostaria de saber o status da minha solicitação #45632. Foi aberta há 5 dias e ainda não tive retorno. Aguardo informações. Obrigado.">
+                                <small><strong>Email produtivo:</strong> Solicitação de status</small>
+                            </div>
+                            <div class="card mb-2 p-3" data-email="Feliz Natal para toda a equipe! Que seja um ano de muito sucesso para todos nós!">
+                                <small><strong>Email improdutivo:</strong> Mensagem de felicitações</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-4 mb-4 d-none" id="resultsCard">
+                    <h3 class="text-center mb-4">Resultados da Análise</h3>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card p-3 h-100">
+                                <h5><i class="fas fa-tag me-2"></i>Categoria</h5>
+                                <div class="text-center mt-3">
+                                    <span class="category-badge" id="categoryBadge">Produtivo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-3 h-100">
+                                <h5><i class="fas fa-chart-pie me-2"></i>Confiança</h5>
+                                <div class="text-center mt-3">
+                                    <h2 id="confidenceValue">95%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5><i class="fas fa-mail-bulk me-2"></i>Resposta Sugerida</h5>
+                        <div class="response-box mt-3">
+                            <p id="suggestedResponse">Olá, agradecemos seu contato. Sua solicitação está em análise e retornaremos em breve.</p>
+                        </div>
+                        <div class="mt-3 text-end">
+                            <button class="btn btn-outline-primary" id="copyResponseBtn">
+                                <i class="fas fa-copy me-2"></i>Copiar Resposta
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="newAnalysisBtn">
+                            <i class="fas fa-redo me-2"></i>Nova Análise
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card p-4 text-center d-none" id="loadingCard">
+                    <div class="spinner-border text-primary mb-3" role="status">
+                        <span class="visually-hidden">Processando...</span>
+                    </div>
+                    <h4>Processando seu email</h4>
+                    <p class="text-muted">Isso pode levar alguns segundos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Solução desenvolvida para classificação automática de emails utilizando Inteligência Artificial</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('fileInput');
+            const emailText = document.getElementById('emailText');
+            const processBtn = document.getElementById('processBtn');
+            const resultsCard = document.getElementById('resultsCard');
+            const loadingCard = document.getElementById('loadingCard');
+            const categoryBadge = document.getElementById('categoryBadge');
+            const confidenceValue = document.getElementById('confidenceValue');
+            const suggestedResponse = document.getElementById('suggestedResponse');
+            const copyResponseBtn = document.getElementById('copyResponseBtn');
+            const newAnalysisBtn = document.getElementById('newAnalysisBtn');
+            const exampleEmails = document.querySelectorAll('.example-emails .card');
+            
+            // Habilitar arrastar e soltar
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                uploadArea.classList.add('dragover');
+            }
+            
+            function unhighlight() {
+                uploadArea.classList.remove('dragover');
+            }
+            
+            uploadArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                if (files.length) {
+                    fileInput.files = files;
+                    handleFiles(files);
+                }
+            }
+            
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            function handleFiles(files) {
+                if (files.length && (files[0].type === 'text/plain' || files[0].name.endsWith('.pdf'))) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        emailText.value = e.target.result;
+                        validateForm();
+                    };
+                    reader.readAsText(files[0]);
+                } else {
+                    alert('Por favor, selecione um arquivo .txt ou .pdf');
+                }
+            }
+            
+            emailText.addEventListener('input', validateForm);
+            
+            function validateForm() {
+                processBtn.disabled = emailText.value.trim() === '';
+            }
+            
+            // Exemplos de emails
+            exampleEmails.forEach(card => {
+                card.addEventListener('click', function() {
+                    emailText.value = this.getAttribute('data-email');
+                    validateForm();
+                });
+            });
+            
+            // Processar email
+            processBtn.addEventListener('click', function() {
+                processEmail();
+            });
+            
+            async function processEmail() {
+                const emailContent = emailText.value.trim();
+                
+                if (!emailContent) return;
+                
+                // Mostrar loading
+                loadingCard.classList.remove('d-none');
+                processBtn.disabled = true;
+                
+                try {
+                    // Fazer requisição para a API
+                    const response = await fetch('/classify', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ text: emailContent })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        // Atualizar UI com resultados
+                        categoryBadge.textContent = data.category === 'productive' ? 'Produtivo' : 'Improdutivo';
+                        categoryBadge.className = 'category-badge ' + (data.category === 'productive' ? 'productive' : 'unproductive');
+                        confidenceValue.textContent = Math.round(data.confidence * 100) + '%';
+                        suggestedResponse.textContent = data.suggested_response;
+                        
+                        // Esconder loading e mostrar resultados
+                        loadingCard.classList.add('d-none');
+                        resultsCard.classList.remove('d-none');
+                    } else {
+                        throw new Error(data.error || 'Erro ao processar email');
+                    }
+                    
+                } catch (error) {
+                    console.error('Erro ao processar email:', error);
+                    alert('Erro ao processar o email. Por favor, tente novamente.');
+                    loadingCard.classList.add('d-none');
+                    processBtn.disabled = false;
+                }
+            }
+            
+            // Copiar resposta
+            copyResponseBtn.addEventListener('click', function() {
+                navigator.clipboard.writeText(suggestedResponse.textContent)
+                    .then(() => {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-check me-2"></i>Copiado!';
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    })
+                    .catch(err => {
+                        console.error('Erro ao copiar texto: ', err);
+                    });
+            });
+            
+            // Nova análise
+            newAnalysisBtn.addEventListener('click', function() {
+                emailText.value = '';
+                fileInput.value = '';
+                resultsCard.classList.add('d-none');
+                processBtn.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>
