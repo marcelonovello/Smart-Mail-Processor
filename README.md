@@ -1,7 +1,7 @@
 <div align="center" style="position: relative;">
    <h1 align="center">CLEAR INBOX 📬</h1>
   <p align="center">
-     Organize sua caixa de entrada: identifique automaticamente e-mails produtivos e improdutivos.
+     Uma ferramenta inteligente de gestão de emails que classifica automaticamente suas mensagens como produtivas ou improdutivas, ajudando você a focar no que realmente importa e manter sua caixa de entrada organizada.
   </p>
 
   <!-- Botões interativos -->
