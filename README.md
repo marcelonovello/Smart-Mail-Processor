@@ -1,7 +1,7 @@
 <div align="center" style="position: relative;">
    <h1 align="center">CLEAR INBOX</h1>
   <p align="center">
-    ❯ Classifique automaticamente seus e-mails como produtivos ou improdutivos
+     Classifique automaticamente seus e-mails como produtivos ou improdutivos
   </p>
 
  
@@ -20,7 +20,7 @@
     </a>
   </p>
 
-  <p align="left">
+  <p align="center">
     <a href="https://github.com/marcelonovello/clearInbox/network/members">
       <img src="https://img.shields.io/github/forks/marcelonovello/clearInbox?style=flat-square&label=forks&color=555555" height="20"/>
     </a>
@@ -34,7 +34,12 @@
 </div>
 
 <br clear="right">
-<details><summary>Índice</summary>
+
+## 🔎 Visão Geral
+
+<code>❯ **Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
+
+<details><summary>📑 Sumário</summary>
 
 - [ Visão Geral](#-overview)
 - [ Funcionalidades](#-features)
@@ -53,13 +58,9 @@
 </details>
 <hr>
 
-##  Visão Geral
-
-<code>❯ **Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
-
 ---
 
-##  Funcionalidades
+## ✨ Funcionalidades
 
 <code>❯ Classificação automática de e-mails</code><br>
 <code>❯ Interface limpa e simples</code><br>
@@ -68,7 +69,7 @@
 
 ---
 
-##  Estrutura do Projeto
+## 🏗 Estrutura do Projeto
 
 ```sh
 └── clearInbox/
@@ -83,7 +84,7 @@
 ```
 
 
-###  Índice do Projeto
+### 📂 Índice do Projeto
 <details open> <summary><b>CLEARINBOX/</b></summary> <table> <tr> <td><b>
 <a href='https://github.com/marcelonovello/clearInbox/blob/master/app.py'>app.py</a></b></td> <td>Main Flask application entrypoint</td> </tr> <tr> <td><b>
   <a href='https://github.com/marcelonovello/clearInbox/blob/master/requirements.txt'>requirements.txt</a></b></td> <td>Python dependencies</td> </tr> <tr> <td><b>
@@ -123,8 +124,6 @@ Instale o clearInbox usando um dos métodos::
 ```sh
 ❯ pip install -r requirements.txt
 ```
-
-
 
 
 ###  🚀 Uso
