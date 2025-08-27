@@ -1,13 +1,11 @@
-<div align="left" style="position: relative;">
-  <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/external-readme-is-a-easy-to-build-a-developer-hub-that-adapts-to-the-user-logo-regular-tal-revivo.png" 
-       align="right" width="30%" style="margin: -20px 0 0 20px;">
-  <h1>CLEARINBOX</h1>
-  <p align="left">
-    <em><code>❯ Automatically classify your emails as productive or unproductive</code></em>
+<div align="center" style="position: relative;">
+   <h1 align="center">CLEAR INBOX</h1>
+  <p align="center">
+    ❯ Classifique automaticamente seus e-mails como produtivos ou improdutivos
   </p>
 
-  <p align="left">Built with the following tools and technologies:</p>
-  <p align="left">
+ 
+  <p align="center">
     <a href="https://www.python.org/">
       <img src="https://skillicons.dev/icons?i=python&theme=light" width="60"/>
     </a>
@@ -36,41 +34,41 @@
 </div>
 
 <br clear="right">
-<details><summary>Table of Contents</summary>
+<details><summary>Índice</summary>
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
+- [ Visão Geral](#-overview)
+- [ Funcionalidades](#-features)
+- [ Estrutura do Projeto](#-project-structure)
+  - [ Índice do Projeto](#-project-index)
+- [ Começando](#-getting-started)
+  - [ Pré-requisitos](#-prerequisites)
+  - [ Instalação](#-installation)
+  - [ Uso](#-usage)
+  - [ Testes](#-testing)
+- [ Roteiro do Projeto](#-project-roadmap)
+- [ Contribuindo](#-contributing)
+- [ Licença](#-license)
+- [ Agradecimentos](#-acknowledgments)
 
 </details>
 <hr>
 
-##  Overview
+##  Visão Geral
 
-<code>❯ **Clear-In-box** is a Python Flask application that automatically classifies your emails as **productive** or **unproductive**, helping you focus on what matters and keep your inbox organized.</code>
-
----
-
-##  Features
-
-<code>❯ Automatic email classification</code><br>
-<code>❯ Clean and simple interface</code><br>
-<code>❯ Flask backend with HTML/CSS frontend</code><br>
-<code>❯ Easily extensible for more features</code><br>
+<code>❯ **Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
 
 ---
 
-##  Project Structure
+##  Funcionalidades
+
+<code>❯ Classificação automática de e-mails</code><br>
+<code>❯ Interface limpa e simples</code><br>
+<code>❯ Backend Flask com frontend em HTML/CSS</code><br>
+<code>❯ Facilmente extensível para mais funcionalidades</code><br>
+
+---
+
+##  Estrutura do Projeto
 
 ```sh
 └── clearInbox/
@@ -85,7 +83,7 @@
 ```
 
 
-###  Project Index
+###  Índice do Projeto
 <details open> <summary><b>CLEARINBOX/</b></summary> <table> <tr> <td><b>
 <a href='https://github.com/marcelonovello/clearInbox/blob/master/app.py'>app.py</a></b></td> <td>Main Flask application entrypoint</td> </tr> <tr> <td><b>
   <a href='https://github.com/marcelonovello/clearInbox/blob/master/requirements.txt'>requirements.txt</a></b></td> <td>Python dependencies</td> </tr> <tr> <td><b>
@@ -93,35 +91,34 @@
       <a href='https://github.com/marcelonovello/clearInbox/blob/master/static/style.css'>static/style.css</b></td> <td>CSS styling for the interface</td> </tr> </table> </details>
 
 ---
-##  Getting Started
+## ⚡ Começando
 
-###  Prerequisites
+### 🛠 Pré-requisitos
 
-Before getting started with clearInbox, ensure your runtime environment meets the following requirements:
+Antes de começar com clearInbox, verifique se seu ambiente atende aos seguintes requisitos:
 
 - **Programming Language:** Python
 - **Package Manager:** Pip
 
-###  Installation
+## ⚙️ Instalação
 
-Install clearInbox using one of the following methods:
+Instale o clearInbox usando um dos métodos::
 
-**Build from source:**
+**Build a partir do código-fonte:**
 
-1. Clone the clearInbox repository:
+1. Clone o repositório:
 ```sh
 ❯ git clone https://github.com/marcelonovello/clearInbox
 ```
 
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
 ```sh
 ❯ cd clearInbox
 ```
 
-3. Install the project dependencies:
+3. Instale as dependências:
 
-
-**Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+**Usando:** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ pip install -r requirements.txt
@@ -130,18 +127,20 @@ Install clearInbox using one of the following methods:
 
 
 
-###  Usage
-Run clearInbox using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+###  🚀 Uso
+Execute o CleanInbox usando o seguinte comando:<br>
+
+**Usando:** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ python {entrypoint}
 ```
 
 
-###  Testing
-Run the test suite using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+###  🧪 Testes
+Execute os testes usando o seguinte comando:<br>
+
+**Usando** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ pytest
@@ -149,48 +148,48 @@ Run the test suite using the following command:
 
 
 ---
-##  Project Roadmap
+##  🗺 Roteiro do Projetop
 
-- [X] **`Task 1`**: Initial email classification feature.
-- [ ] **`Task 2`**: UI improvements.
-- [ ] **`Task 3`**: Integration with real email services.
-- [ ] **`Task 4`**: Initial email classification feature
+- [X] **`Tarefa 1`**: Funcionalidade inicial de classificação de e-mails.
+- [ ] **`Tarefa 2`**: Melhorias na interface.
+- [ ] **`Tarefa 3`**: Integração com serviços reais de e-mail.
+- [ ] **`Tarefa 4`**: Funcionalidade inicial de classificação de e-mails.
 
 ---
 
-##  Contributing
+## 👥 Contribuindo
 
-- **💬 [Join the Discussions](https://github.com/marcelonovello/clearInbox/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/marcelonovello/clearInbox/issues)**: Submit bugs found or log feature requests for the `clearInbox` project.
-- **💡 [Submit Pull Requests](https://github.com/marcelonovello/clearInbox/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **💬 [Join the Discussions](https://github.com/marcelonovello/clearInbox/discussions)**: Compartilhe suas ideias, forneça feedback ou faça perguntas.
+- **🐛 [Report Issues](https://github.com/marcelonovello/clearInbox/issues)**: Envie bugs encontrados ou registre solicitações de funcionalidades para o projeto `clearInbox`.
+- **💡 [Submit Pull Requests](https://github.com/marcelonovello/clearInbox/blob/main/CONTRIBUTING.md)**: Revise PRs abertos e envie seus próprios PRs.
 
 <details closed>
-<summary>Contributing Guidelines</summary>
+<summary>Diretrizes para Contribuição</summary>
 
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+1. **Fork do Repositório**: Comece fazendo um fork do repositório para sua conta no GitHub.
+2. **Clone Localmente**: Clone o repositório forked para sua máquina usando um cliente git.
    ```sh
    git clone https://github.com/marcelonovello/clearInbox
    ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+3. **Crie uma Nova Branch**: Sempre trabalhe em uma nova branch, dando um nome descritivo.
    ```sh
    git checkout -b new-feature-x
    ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
+4. **Faça Suas Alterações**: Desenvolva e teste suas alterações localmente.
+5. **Commit das Alterações**: Faça commit com uma mensagem clara descrevendo suas atualizações.
    ```sh
    git commit -m 'Implemented new feature x.'
    ```
-6. **Push to github**: Push the changes to your forked repository.
+6. **Push para o github**: Envie as alterações para seu repositório forked.
    ```sh
    git push origin new-feature-x
    ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+7. **Submeta um Pull Request**: Crie um PR contra o repositório original. Descreva claramente as mudanças e suas motivações.
+8. **Revisão**: Uma vez que o PR seja revisado e aprovado, ele será mergeado na branch principal. Parabéns pela contribuição!
 </details>
 
 <details closed>
-<summary>Contributor Graph</summary>
+<summary>Gráfico de Contribuidores</summary>
 <br>
 <p align="left">
    <a href="https://github.com{/marcelonovello/clearInbox/}graphs/contributors">
@@ -201,13 +200,14 @@ Run the test suite using the following command:
 
 ---
 
-##  License
+## 📄 Licença
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 
 ---
 
-##  Acknowledgments
+## 📚 Agradecimentos
 
 - Flask
 - Icons8
