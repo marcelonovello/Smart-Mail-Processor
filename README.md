@@ -1,47 +1,29 @@
 <div align="center" style="position: relative;">
-   <h1 align="center">CLEAR INBOX</h1>
+   <h1 align="center">CLEAR INBOX 📬</h1>
   <p align="center">
-     Classifique automaticamente seus e-mails como produtivos ou improdutivos
+     Organize sua caixa de entrada: identifique automaticamente e-mails produtivos e improdutivos.
   </p>
 
- 
+  <!-- Botões interativos -->
   <p align="center">
-    <a href="https://www.python.org/">
-      <img src="https://skillicons.dev/icons?i=python&theme=light" width="60"/>
+    <a href="https://github.com/marcelonovello/clearInbox/network/members" style="text-decoration:none;">
+      <img src="https://img.shields.io/badge/👥%20Contribuidores-555555?style=for-the-badge&logo=github" />
     </a>
-    <a href="https://flask.palletsprojects.com/">
-      <img src="https://skillicons.dev/icons?i=flask&theme=light" width="60"/>
+    <a href="https://github.com/marcelonovello/clearInbox/issues" style="text-decoration:none;">
+      <img src="https://img.shields.io/badge/🐛%20Issues-4caf50?style=for-the-badge&logo=github" />
     </a>
-    <a href="https://www.w3.org/html/">
-      <img src="https://skillicons.dev/icons?i=html&theme=light" width="60"/>
-    </a>
-    <a href="https://www.markdownguide.org/">
-      <img src="https://skillicons.dev/icons?i=md&theme=light" width="60"/>
+    <a href="https://github.com/marcelonovello/clearInbox/blob/main/LICENSE" style="text-decoration:none;">
+      <img src="https://img.shields.io/badge/📄%20Licença-4caf50?style=for-the-badge&logo=github" />
     </a>
   </p>
 
-  <p align="center">
-    <a href="https://github.com/marcelonovello/clearInbox/network/members">
-      <img src="https://img.shields.io/github/forks/marcelonovello/clearInbox?style=flat-square&label=forks&color=555555" height="20"/>
-    </a>
-    <a href="https://github.com/marcelonovello/clearInbox/issues">
-      <img src="https://img.shields.io/github/issues/marcelonovello/clearInbox?style=flat-square&label=issues&color=4caf50" height="20"/>
-    </a>
-    <a href="https://github.com/marcelonovello/clearInbox/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/marcelonovello/clearInbox?style=flat-square&label=license&color=4caf50" height="20"/>
-    </a>
-  </p>
+<br clear="right"> 
 </div>
-
-<br clear="right">
-
-## 🔎 Visão Geral
-
-<code>❯ **Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
 
 <details><summary>📑 Sumário</summary>
 
 - [ Visão Geral](#-overview)
+- [ Tecnologias](#-tecnologias)
 - [ Funcionalidades](#-features)
 - [ Estrutura do Projeto](#-project-structure)
   - [ Índice do Projeto](#-project-index)
@@ -56,16 +38,29 @@
 - [ Agradecimentos](#-acknowledgments)
 
 </details>
-<hr>
+
+---
+
+## 🔎 Visão Geral
+
+**Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
+
+---
+
+## 🛠 Tecnologias
+<p>
+  <img src="https://skillicons.dev/icons?i=python,html,css" />
+</p></div>
 
 ---
 
 ## ✨ Funcionalidades
 
-<code>❯ Classificação automática de e-mails</code><br>
-<code>❯ Interface limpa e simples</code><br>
-<code>❯ Backend Flask com frontend em HTML/CSS</code><br>
-<code>❯ Facilmente extensível para mais funcionalidades</code><br>
+- 📧 Classificação automática de e-mails<br>
+- 🎨 Interface limpa e simples<br>
+- ⚙️ Backend Flask com frontend em HTML/CSS<br>
+- ➕ Facilmente extensível para mais funcionalidades<br>
+
 
 ---
 
@@ -84,12 +79,12 @@
 ```
 
 
-### 📂 Índice do Projeto
+## 📂 Índice do Projeto
 <details open> <summary><b>CLEARINBOX/</b></summary> <table> <tr> <td><b>
-<a href='https://github.com/marcelonovello/clearInbox/blob/master/app.py'>app.py</a></b></td> <td>Main Flask application entrypoint</td> </tr> <tr> <td><b>
-  <a href='https://github.com/marcelonovello/clearInbox/blob/master/requirements.txt'>requirements.txt</a></b></td> <td>Python dependencies</td> </tr> <tr> <td><b>
-    <a href='https://github.com/marcelonovello/clearInbox/blob/master/templates/index.html'>index.html</a></b></td> <td>Main HTML template</td> </tr> <tr> <td><b>
-      <a href='https://github.com/marcelonovello/clearInbox/blob/master/static/style.css'>static/style.css</b></td> <td>CSS styling for the interface</td> </tr> </table> </details>
+<a href='https://github.com/marcelonovello/clearInbox/blob/master/app.py'>app.py</a></b></td> <td>Ponto de entrada principal da aplicação Flask</td> </tr> <tr> <td><b>
+  <a href='https://github.com/marcelonovello/clearInbox/blob/master/requirements.txt'>requirements.txt</a></b></td> <td>Dependências do Python</td> </tr> <tr> <td><b>
+    <a href='https://github.com/marcelonovello/clearInbox/blob/master/templates/index.html'>index.html</a></b></td> <td>Template HTML principal</td> </tr> <tr> <td><b>
+      <a href='https://github.com/marcelonovello/clearInbox/blob/master/static/style.css'>static/style.css</b></td> <td>Estilo CSS para a interface</td> </tr> </table> </details>
 
 ---
 ## ⚡ Começando
@@ -119,27 +114,27 @@ Instale o clearInbox usando um dos métodos::
 
 3. Instale as dependências:
 
-**Usando:** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ pip install -r requirements.txt
 ```
 
 
-###  🚀 Uso
+## 🚀 Uso
 Execute o CleanInbox usando o seguinte comando:<br>
 
-**Usando:** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ python {entrypoint}
 ```
 
 
-###  🧪 Testes
+### 🧪 Testes
 Execute os testes usando o seguinte comando:<br>
 
-**Usando** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
 ❯ pytest
@@ -158,9 +153,9 @@ Execute os testes usando o seguinte comando:<br>
 
 ## 👥 Contribuindo
 
-- **💬 [Join the Discussions](https://github.com/marcelonovello/clearInbox/discussions)**: Compartilhe suas ideias, forneça feedback ou faça perguntas.
-- **🐛 [Report Issues](https://github.com/marcelonovello/clearInbox/issues)**: Envie bugs encontrados ou registre solicitações de funcionalidades para o projeto `clearInbox`.
-- **💡 [Submit Pull Requests](https://github.com/marcelonovello/clearInbox/blob/main/CONTRIBUTING.md)**: Revise PRs abertos e envie seus próprios PRs.
+- **💬 [Participe das Discussões](https://github.com/marcelonovello/clearInbox/discussions)**: Compartilhe suas ideias, forneça feedback ou faça perguntas.
+- **🐛 [Reportar Problemas](https://github.com/marcelonovello/clearInbox/issues)**: Envie bugs encontrados ou registre solicitações de funcionalidades para o projeto `clearInbox`.
+- **💡 [Submeta Pull Requests](https://github.com/marcelonovello/clearInbox/blob/main/CONTRIBUTING.md)**: Revise PRs abertos e envie seus próprios PRs.
 
 <details closed>
 <summary>Diretrizes para Contribuição</summary>
@@ -211,6 +206,6 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](L
 - Flask
 - Icons8
 - Skillicons.dev
-- Inspiration from productivity tools and email automation
+- Inspirado em ferramentas de produtividade e automação de e-mails
 
 ---
