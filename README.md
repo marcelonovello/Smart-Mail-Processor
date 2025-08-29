@@ -20,37 +20,31 @@
 <br clear="right"> 
 </div>
 
-<details><summary>📑 Sumário</summary>
-
-- [ Visão Geral](#-overview)
-- [ Tecnologias](#-tecnologias)
-- [ Funcionalidades](#-features)
-- [ Estrutura do Projeto](#-project-structure)
-  - [ Índice do Projeto](#-project-index)
-- [ Começando](#-getting-started)
-  - [ Pré-requisitos](#-prerequisites)
-  - [ Instalação](#-installation)
-  - [ Uso](#-usage)
-  - [ Testes](#-testing)
-- [ Roteiro do Projeto](#-project-roadmap)
-- [ Contribuindo](#-contributing)
-- [ Licença](#-license)
-- [ Agradecimentos](#-acknowledgments)
-
-</details>
-
----
-
 ## 🔎 Visão Geral
 
-**Clear-In-box** é uma aplicação Python Flask que classifica automaticamente seus e-mails como **produtivos** ou **improdutivos**, ajudando você a focar no que importa e manter sua caixa de entrada organizada.</code>
-
----
+O **Clear Inbox** é uma API inteligente para classificação automática de emails. Utiliza um modelo de Machine Learning para distinguir entre mensagens de suporte/solicitações e mensagens comuns, ajudando na triagem e organização automática da caixa de entrada
 
 ## 🛠 Tecnologias
 <p>
   <img src="https://skillicons.dev/icons?i=python,html,css" />
 </p></div>
+
+## 📑 Sumário
+
+- 📖 [Visão Geral](#-visão-geral)
+- 🛠 [Tecnologias](#-tecnologias)
+- ✨ [Funcionalidades](#-funcionalidades)
+- 🏗 [Estrutura do Projeto](#-estrutura-do-projeto)
+- 🚀 [Começando](#-começando)
+  - 🛠 [Pré-requisitos](#-pré-requisitos)
+  - ⚙️ [Instalação](#-instalação)
+  - 🚀 [Uso](#-uso)
+  - 🧪 [Testes](#-testes)
+  	- 🔧 [Resolução de Problemas](#-resolução-de-Problemas)
+- 🗺 [Roteiro do Projeto](#-roteiro-do-projeto)
+- 👥 [Contribuindo](#-contribuindo)
+- 📄 [Licença](#-licença)
+- 📚 [Agradecimentos](#-agradecimentos)
 
 ---
 
@@ -61,30 +55,21 @@
 - ⚙️ Backend Flask com frontend em HTML/CSS<br>
 - ➕ Facilmente extensível para mais funcionalidades<br>
 
-
 ---
 
 ## 🏗 Estrutura do Projeto
 
 ```sh
-└── clearInbox/
-    ├── LICENSE
-    ├── README.md
-    ├── app.py
-    ├── requirements.txt
-    ├── static
-    │   └── style.css
-    └── templates
-        └── index.html
+└── 📦 clearInbox/
+    ├── 📄 LICENSE
+    ├── 📄 README.md
+    ├── 📄 app.py
+    ├── 📄 requirements.txt
+    ├── 📂 static
+    │   └── 📄 style.css
+    └── 📂 templates
+        └── 📄 index.html
 ```
-
-
-## 📂 Índice do Projeto
-<details open> <summary><b>CLEARINBOX/</b></summary> <table> <tr> <td><b>
-<a href='https://github.com/marcelonovello/clearInbox/blob/master/app.py'>app.py</a></b></td> <td>Ponto de entrada principal da aplicação Flask</td> </tr> <tr> <td><b>
-  <a href='https://github.com/marcelonovello/clearInbox/blob/master/requirements.txt'>requirements.txt</a></b></td> <td>Dependências do Python</td> </tr> <tr> <td><b>
-    <a href='https://github.com/marcelonovello/clearInbox/blob/master/templates/index.html'>index.html</a></b></td> <td>Template HTML principal</td> </tr> <tr> <td><b>
-      <a href='https://github.com/marcelonovello/clearInbox/blob/master/static/style.css'>static/style.css</b></td> <td>Estilo CSS para a interface</td> </tr> </table> </details>
 
 ---
 ## ⚡ Começando
@@ -93,8 +78,7 @@
 
 Antes de começar com clearInbox, verifique se seu ambiente atende aos seguintes requisitos:
 
-- **Programming Language:** Python
-- **Package Manager:** Pip
+- [<img align="center" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />](https://www.python.org/)
 
 ## ⚙️ Instalação
 
@@ -104,42 +88,101 @@ Instale o clearInbox usando um dos métodos::
 
 1. Clone o repositório:
 ```sh
-❯ git clone https://github.com/marcelonovello/clearInbox
+git clone https://github.com/marcelonovello/clearInbox
 ```
 
 2. Navegue até o diretório do projeto:
 ```sh
-❯ cd clearInbox
+cd clearInbox
 ```
 
 3. Instale as dependências:
-
-**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
-
 ```sh
-❯ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-
 
 ## 🚀 Uso
 Execute o CleanInbox usando o seguinte comando:<br>
-
-**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
-
 ```sh
-❯ python {entrypoint}
+py app.py
 ```
-
 
 ### 🧪 Testes
 Execute os testes usando o seguinte comando:<br>
 
-**Usando:** [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
-
 ```sh
-❯ pytest
+pytest
 ```
 
+🔧 Resolução de Problemas
+🚫 Erros de Autenticação:
+```bash
+# Verifique se as credenciais do Gmail estão corretas
+# Certifique-se que a autenticação de 2 fatores está desativada
+# Gere uma senha específica para aplicativos se necessário
+```
+
+📧 Limite de Requisições da API
+```bash
+# Aumente o intervalo entre operações
+python clear_inbox.py --delay 2
+
+# Execute em horários de menor movimento
+# Divida as operações em lotes menores
+```
+
+🌐 Problemas de Conexão
+```bash
+# Verifique sua conexão com a internet
+# Use modo verboso para diagnóstico
+python clear_inbox.py --verbose
+
+# Tente uma rede diferente
+# Aumente as configurações de timeout
+```
+
+🔍 E-mails Não Encontrados
+```bash
+# Teste critérios de busca com dry-run
+python clear_inbox.py --dry-run --verbose
+
+# Ajuste filtros de data se necessário
+# Verifique permissões da conta de e-mail
+```
+
+⚡ Erros Inesperados
+```bash
+# Sempre teste com dry-run primeiro
+python clear_inbox.py --dry-run
+
+# Limite o escopo com max-emails
+python clear_inbox.py --max-emails 100
+
+# Verifique logs detalhados
+python clear_inbox.py --verbose
+```
+
+🛡️ Medidas de Segurança
+```bash
+# Sempre teste primeiro com dry-run
+python clear_inbox.py --dry-run --verbose
+
+# Comece com pequenos lotes
+python clear_inbox.py --max-emails 50
+
+# Use intervalos maiores inicialmente
+python clear_inbox.py --delay 3
+```
+
+📋 Para Contas Grandes (>50 mil e-mails)
+```bash
+# Recomendações
+# Processe por intervalos de data
+python clear_inbox.py --after-date 2023-01-01 --before-date 2023-06-30
+
+# Use lotes menores com pausas
+python clear_inbox.py --max-emails 1000 && sleep 300
+```
 
 ---
 ##  🗺 Roteiro do Projetop
@@ -198,14 +241,13 @@ Execute os testes usando o seguinte comando:<br>
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-
 ---
 
 ## 📚 Agradecimentos
 
-- Flask
-- Icons8
-- Skillicons.dev
-- Inspirado em ferramentas de produtividade e automação de e-mails
+- ⚗️ Flask
+- 🎨 Icons8
+- 🖼️ Skillicons.dev
+- 📧 Inspirado em ferramentas de produtividade e automação de e-mails
 
 ---
