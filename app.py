@@ -154,6 +154,7 @@ def classify_email():
         if confidence < 0.6:  # Confiança baixa
             category_fallback, confidence_fallback = keyword_based_classifier(email_text)
             return jsonify({
+                'prediction': category_fallback,
                 'category': category_fallback,
                 'confidence': float(confidence_fallback),
                 'suggested_response': generate_response(category_fallback),
@@ -173,6 +174,7 @@ def classify_email():
         # Se houver erro no modelo ML, usa classificador por palavras-chave
         category, confidence = keyword_based_classifier(email_text)
         return jsonify({
+            'prediction': category,
             'category': category,
             'confidence': float(confidence),
             'suggested_response': generate_response(category),
@@ -180,7 +182,8 @@ def classify_email():
             'error': str(e)
         })
 
+setup_classifier()
+
 if __name__ == '__main__':
-    setup_classifier()
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
