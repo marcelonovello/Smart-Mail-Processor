@@ -107,14 +107,14 @@ Execute o CleanInbox usando o seguinte comando:<br>
 py app.py
 ```
 
-### 🧪 Testes
+## 🧪 Testes
 Execute os testes usando o seguinte comando:<br>
 
 ```sh
 pytest
 ```
 
-🔧 Resolução de Problemas
+## 🔧 Resolução de Problemas
 🚫 Erros de Autenticação:
 ```bash
 # Verifique se as credenciais do Gmail estão corretas
