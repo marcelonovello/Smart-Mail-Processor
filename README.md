@@ -1,3 +1,5 @@
+[🇺🇸 English](./README.md)   |   [🇧🇷 Português](./README-pt.md)
+
 <div align="center" style="position: relative;">
    <h1 align="center">CLEAR INBOX 📬</h1>
   <p align="center">
@@ -21,24 +23,28 @@
 </div>
 
 ## 🔎 Visão Geral
+Este projeto é uma ferramenta de produtividade para organização automatizada de caixas de entrada de e-mails, desenvolvida em Python. Permite que os usuários:
 
-O **Clear Inbox** é uma API inteligente para classificação automática de emails. Utiliza um modelo de Machine Learning para distinguir entre mensagens de suporte/solicitações e mensagens comuns, ajudando na triagem e organização automática da caixa de entrada
+- 🔍 Organizar e categorizar e-mails automaticamente.
+- 🗑️ Limpar e remover mensagens desnecessárias ou spam de forma eficiente.
+- ⭐ Priorizar e-mails importantes para acesso rápido.
+- 🧩 Design modular e extensível, permitindo adicionar novas regras ou provedores de e-mail.
 
-## 🛠 Tecnologias
+## 💻 Tecnologias
 <p>
   <img src="https://skillicons.dev/icons?i=python,html,css" />
 </p></div>
 
 ## 📑 Sumário
 
-- 📖 [Visão Geral](#-visão-geral)
-- 🛠 [Tecnologias](#-tecnologias)
+- 🔎 [Visão Geral](#-visão-geral)
+- 💻 [Tecnologias](#-tecnologias)
 - ✨ [Funcionalidades](#-funcionalidades)
 - 🏗 [Estrutura do Projeto](#-estrutura-do-projeto)
 - 🚀 [Começando](#-começando)
-  - 🛠 [Pré-requisitos](#-pré-requisitos)
-  - ⚙️ [Instalação](#-instalação)
-  - 🚀 [Uso](#-uso)
+  - ⚙️ [Pré-requisitos](#-pré-requisitos)
+  - ⬇️ [Instalação](#-instalação)
+  - 🛠️ [Uso](#-uso)
   - 🧪 [Testes](#-testes)
   	- 🔧 [Resolução de Problemas](#-resolução-de-Problemas)
 - 🗺 [Roteiro do Projeto](#-roteiro-do-projeto)
@@ -55,8 +61,6 @@ O **Clear Inbox** é uma API inteligente para classificação automática de ema
 - ⚙️ Backend Flask com frontend em HTML/CSS<br>
 - ➕ Facilmente extensível para mais funcionalidades<br>
 
----
-
 ## 🏗 Estrutura do Projeto
 
 ```sh
@@ -72,15 +76,16 @@ O **Clear Inbox** é uma API inteligente para classificação automática de ema
 ```
 
 ---
-## ⚡ Começando
 
-### 🛠 Pré-requisitos
+## 🚀 Começando
+
+### ⚙️ Pré-requisitos
 
 Antes de começar com clearInbox, verifique se seu ambiente atende aos seguintes requisitos:
 
 - [<img align="center" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />](https://www.python.org/)
 
-## ⚙️ Instalação
+## ⬇️ Instalação
 
 Instale o clearInbox usando um dos métodos::
 
@@ -101,7 +106,7 @@ cd clearInbox
 pip install -r requirements.txt
 ```
 
-## 🚀 Uso
+## 🛠️ Uso
 Execute o CleanInbox usando o seguinte comando:<br>
 ```sh
 py app.py
@@ -185,12 +190,22 @@ python clear_inbox.py --max-emails 1000 && sleep 300
 ```
 
 ---
-##  🗺 Roteiro do Projetop
 
-- [X] **`Tarefa 1`**: Funcionalidade inicial de classificação de e-mails.
-- [ ] **`Tarefa 2`**: Melhorias na interface.
-- [ ] **`Tarefa 3`**: Integração com serviços reais de e-mail.
-- [ ] **`Tarefa 4`**: Funcionalidade inicial de classificação de e-mails.
+## 🗺 Roteiro do Projeto
+
+- [X] **`Init`**: Inicializar estrutura do projeto Python e configurar ambiente virtual.
+- [ ] **`Email Connect`**: Implementar conexão com provedores de e-mail (IMAP/SMTP).
+- [ ] **`Parsing`**: Criar módulo para leitura e categorização automática de mensagens.
+- [ ] **`Filtering`**: Implementar regras de filtro para spam, promoções e mensagens desnecessárias.
+- [ ] **`Prioritize`**: Adicionar lógica para identificar e destacar e-mails importantes.
+- [ ] **`CLI / Interface`**: Criar interface de linha de comando para gerenciar caixas de entrada.
+- [ ] **`Automation`**: Automatizar limpeza e organização periódica da caixa de entrada.
+- [ ] **`Dockerize`**: Configurar execução em Docker para desenvolvimento e produção consistentes.
+- [ ] **`Testing`**: Implementar testes unitários e de integração para módulos principais.
+- [ ] **`Logging`**: Adicionar logs detalhados para monitoramento de execução e erros.
+- [ ] **`Optimize`**: Melhorar performance de leitura e categorização de grandes volumes de e-mails.
+- [ ] **`Enhance`**: Adicionar suporte a múltiplos provedores e novas regras de organização.
+
 
 ---
 
