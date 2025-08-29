@@ -22,6 +22,7 @@
 <br clear="right"> 
 </div>
 
+<a id="visao-geral"></a>
 ## 🔎 Visão Geral
 Este projeto é uma ferramenta de produtividade para organização automatizada de caixas de entrada de e-mails, desenvolvida em Python. Permite que os usuários:
 
@@ -30,6 +31,7 @@ Este projeto é uma ferramenta de produtividade para organização automatizada 
 - ⭐ Priorizar e-mails importantes para acesso rápido.
 - 🧩 Design modular e extensível, permitindo adicionar novas regras ou provedores de e-mail.
 
+<a id="tecnologias"></a>
 ## 💻 Tecnologias
 <p>
   <img src="https://skillicons.dev/icons?i=python,html,css" />
@@ -37,23 +39,24 @@ Este projeto é uma ferramenta de produtividade para organização automatizada 
 
 ## 📑 Sumário
 
-- 🔎 [Visão Geral](#-visão-geral)
-- 💻 [Tecnologias](#-tecnologias)
-- ✨ [Funcionalidades](#-funcionalidades)
-- 🏗 [Estrutura do Projeto](#-estrutura-do-projeto)
-- 🚀 [Começando](#-começando)
-  - ⚙️ [Pré-requisitos](#-pré-requisitos)
-  - ⬇️ [Instalação](#-instalação)
-  - 🛠️ [Uso](#-uso)
-  - 🧪 [Testes](#-testes)
-  	- 🔧 [Resolução de Problemas](#-resolução-de-Problemas)
-- 🗺 [Roteiro do Projeto](#-roteiro-do-projeto)
-- 👥 [Contribuindo](#-contribuindo)
-- 📄 [Licença](#-licença)
-- 📚 [Agradecimentos](#-agradecimentos)
+- 🔎 [Visão Geral](#visao-geral)
+- 💻 [Tecnologias](#tecnologias)
+- ✨ [Funcionalidades](#funcionalidades)
+- 🏗 [Estrutura do Projeto](#estrutura-do-projeto)
+- 🚀 [Começando](#comecando)
+  - ⚙️ [Pré-requisitos](#pre-requisitos)
+  - ⬇️ [Instalação](#instalacao)
+  - 🛠️ [Uso](#uso)
+  - 🧪 [Testes](#testes)
+    - 🔧 [Resolução de Problemas](#resolucao-de-problemas)
+- 🗺 [Roteiro do Projeto](#roteiro-do-projeto)
+- 👥 [Contribuindo](#contribuindo)
+- 📄 [Licença](#licenca)
+- 📚 [Agradecimentos](#agradecimentos)
 
 ---
 
+<a id="funcionalidades"></a>
 ## ✨ Funcionalidades
 
 - 📧 Classificação automática de e-mails<br>
@@ -61,6 +64,7 @@ Este projeto é uma ferramenta de produtividade para organização automatizada 
 - ⚙️ Backend Flask com frontend em HTML/CSS<br>
 - ➕ Facilmente extensível para mais funcionalidades<br>
 
+<a id="estrutura-do-projeto"></a>
 ## 🏗 Estrutura do Projeto
 
 ```sh
@@ -76,15 +80,17 @@ Este projeto é uma ferramenta de produtividade para organização automatizada 
 ```
 
 ---
-
+<a id="comecando"></a>
 ## 🚀 Começando
 
+<a id="pre-requisitos"></a>
 ### ⚙️ Pré-requisitos
 
 Antes de começar com clearInbox, verifique se seu ambiente atende aos seguintes requisitos:
 
 - [<img align="center" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />](https://www.python.org/)
 
+<a id="instalacao"></a>
 ## ⬇️ Instalação
 
 Instale o clearInbox usando um dos métodos::
@@ -106,12 +112,14 @@ cd clearInbox
 pip install -r requirements.txt
 ```
 
+<a id="uso"></a>
 ## 🛠️ Uso
 Execute o CleanInbox usando o seguinte comando:<br>
 ```sh
 py app.py
 ```
 
+<a id="testes"></a>
 ## 🧪 Testes
 Execute os testes usando o seguinte comando:<br>
 
@@ -119,6 +127,7 @@ Execute os testes usando o seguinte comando:<br>
 pytest
 ```
 
+<a id="resolucao-de-problemas"></a>
 ## 🔧 Resolução de Problemas
 🚫 Erros de Autenticação:
 ```bash
@@ -191,6 +200,7 @@ python clear_inbox.py --max-emails 1000 && sleep 300
 
 ---
 
+<a id="roteiro-do-projeto"></a>
 ## 🗺 Roteiro do Projeto
 
 - [X] **`Init`**: Inicializar estrutura do projeto Python e configurar ambiente virtual.
@@ -209,6 +219,7 @@ python clear_inbox.py --max-emails 1000 && sleep 300
 
 ---
 
+<a id="contribuindo"></a>
 ## 👥 Contribuindo
 
 - **💬 [Participe das Discussões](https://github.com/marcelonovello/clearInbox/discussions)**: Compartilhe suas ideias, forneça feedback ou faça perguntas.
@@ -252,12 +263,14 @@ python clear_inbox.py --max-emails 1000 && sleep 300
 
 ---
 
+<a id="licenca"></a>
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
+<a id="agradecimento"></a>
 ## 📚 Agradecimentos
 
 - ⚗️ Flask
