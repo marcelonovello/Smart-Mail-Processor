@@ -1,11 +1,6 @@
 [🇺🇸 English](./README.md)   |   [🇧🇷 Português](./README-pt.md)
 
-<<<<<<< HEAD
-<div align="center" style="position: relative;">
-   <h1 align="center">CLEAR INBOX 📬</h1>
-=======
 <div align="center"> <h1 align="center">📬 CLEAR INBOX</h1>
->>>>>>> 731fd9e (Changes)
   <p align="center">
      Uma ferramenta inteligente de gestão de emails que classifica automaticamente suas mensagens como produtivas ou improdutivas, ajudando você a focar no que realmente importa e manter sua caixa de entrada organizada.
   </p>
@@ -28,44 +23,8 @@
 
 </div>
 
-<a id="visao-geral"></a>
 ## 🔎 Visão Geral
-Este projeto é uma ferramenta de produtividade para organização automatizada de caixas de entrada de e-mails, desenvolvida em Python. Permite que os usuários:
 
-<<<<<<< HEAD
-- 🔍 Organizar e categorizar e-mails automaticamente.
-- 🗑️ Limpar e remover mensagens desnecessárias ou spam de forma eficiente.
-- ⭐ Priorizar e-mails importantes para acesso rápido.
-- 🧩 Design modular e extensível, permitindo adicionar novas regras ou provedores de e-mail.
-
-<a id="tecnologias"></a>
-## 💻 Tecnologias
-<p>
-  <img src="https://skillicons.dev/icons?i=python,html,css" />
-</p></div>
-
-## 📑 Sumário
-
-- 🔎 [Visão Geral](#visao-geral)
-- 💻 [Tecnologias](#tecnologias)
-- ✨ [Funcionalidades](#funcionalidades)
-- 🏗 [Estrutura do Projeto](#estrutura-do-projeto)
-- 🚀 [Começando](#comecando)
-  - ⚙️ [Pré-requisitos](#pre-requisitos)
-  - ⬇️ [Instalação](#instalacao)
-  - 🛠️ [Uso](#uso)
-  - 🧪 [Testes](#testes)
-    - 🔧 [Resolução de Problemas](#resolucao-de-problemas)
-- 🗺 [Roteiro do Projeto](#roteiro-do-projeto)
-- 👥 [Contribuindo](#contribuindo)
-- 📄 [Licença](#licenca)
-- 📚 [Agradecimentos](#agradecimentos)
-
----
-
-<a id="funcionalidades"></a>
-## ✨ Funcionalidades
-=======
 O **Clear Inbox** é uma aplicação modular que permite organizar automaticamente sua caixa de entrada, classificando emails em **produtivos** e **improdutivos** usando **Machine Learning**.
 
 > 💡 **Por que este projeto é relevante?**  
@@ -97,7 +56,6 @@ O **Clear Inbox** é uma aplicação modular que permite organizar automaticamen
 ---
 
 <a id="demonstracao"></a>
->>>>>>> 731fd9e (Changes)
 
 ## 🎬 Demonstração
 <p align="center"> 
@@ -108,15 +66,10 @@ O **Clear Inbox** é uma aplicação modular que permite organizar automaticamen
 💻 **Deploy Ativo**:
 - Backend/API: https://clearinbox.onrender.com/ 
 
-<<<<<<< HEAD
-<a id="estrutura-do-projeto"></a>
-## 🏗 Estrutura do Projeto
-=======
 ---
 
 <a id="tecnologias-utilizadas"></a>
 ## 🛠️ Tecnologias Utilizadas
->>>>>>> 731fd9e (Changes)
 
 | Camada           | Tecnologias / Ferramentas                                |
 | ---------------- | -------------------------------------------------------- |
@@ -125,29 +78,15 @@ O **Clear Inbox** é uma aplicação modular que permite organizar automaticamen
 | Ferramentas      | [pip](https://pip.pypa.io/), [Git](https://git-scm.com/) |
 | Machine Learning | scikit-learn, pandas, numpy                              |
 
-<<<<<<< HEAD
----
-<a id="comecando"></a>
-## 🚀 Começando
 
-<a id="pre-requisitos"></a>
-### ⚙️ Pré-requisitos
-=======
-
->>>>>>> 731fd9e (Changes)
 
 <a id="execucao-local"></a>
 ## 🚀 Execução Local
 
 ### ⚙️ Pré-requisitos
 
-<<<<<<< HEAD
-<a id="instalacao"></a>
-## ⬇️ Instalação
-=======
 - ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 - ![pip](https://img.shields.io/badge/pip-000000?style=flat&logo=pypi&logoColor=white)
->>>>>>> 731fd9e (Changes)
 
 
 ### ⬇️ Instalação Rápida
@@ -160,16 +99,8 @@ cd clearInbox
 ```bash
 pip install -r requirements.txt
 ```
-<<<<<<< HEAD
-
-<a id="uso"></a>
-## 🛠️ Uso
-Execute o CleanInbox usando o seguinte comando:<br>
-```sh
-=======
 3️⃣ Execute o aplicativo:
 ```bash
->>>>>>> 731fd9e (Changes)
 py app.py
 ```
 4️⃣ Acesse no navegador:
@@ -177,13 +108,7 @@ py app.py
 http://localhost:5000
 ```
 
-<<<<<<< HEAD
-<a id="testes"></a>
-## 🧪 Testes
-Execute os testes usando o seguinte comando:<br>
-=======
 ---
->>>>>>> 731fd9e (Changes)
 
 <a id="estrutura-do-projeto"></a>
 
@@ -221,102 +146,6 @@ Execute esse comando no terminal:
 pytest
 ```
 
-<<<<<<< HEAD
-<a id="resolucao-de-problemas"></a>
-## 🔧 Resolução de Problemas
-🚫 Erros de Autenticação:
-```bash
-# Verifique se as credenciais do Gmail estão corretas
-# Certifique-se que a autenticação de 2 fatores está desativada
-# Gere uma senha específica para aplicativos se necessário
-```
-
-📧 Limite de Requisições da API
-```bash
-# Aumente o intervalo entre operações
-python clear_inbox.py --delay 2
-
-# Execute em horários de menor movimento
-# Divida as operações em lotes menores
-```
-
-🌐 Problemas de Conexão
-```bash
-# Verifique sua conexão com a internet
-# Use modo verboso para diagnóstico
-python clear_inbox.py --verbose
-
-# Tente uma rede diferente
-# Aumente as configurações de timeout
-```
-
-🔍 E-mails Não Encontrados
-```bash
-# Teste critérios de busca com dry-run
-python clear_inbox.py --dry-run --verbose
-
-# Ajuste filtros de data se necessário
-# Verifique permissões da conta de e-mail
-```
-
-⚡ Erros Inesperados
-```bash
-# Sempre teste com dry-run primeiro
-python clear_inbox.py --dry-run
-
-# Limite o escopo com max-emails
-python clear_inbox.py --max-emails 100
-
-# Verifique logs detalhados
-python clear_inbox.py --verbose
-```
-
-🛡️ Medidas de Segurança
-```bash
-# Sempre teste primeiro com dry-run
-python clear_inbox.py --dry-run --verbose
-
-# Comece com pequenos lotes
-python clear_inbox.py --max-emails 50
-
-# Use intervalos maiores inicialmente
-python clear_inbox.py --delay 3
-```
-
-📋 Para Contas Grandes (>50 mil e-mails)
-```bash
-# Recomendações
-# Processe por intervalos de data
-python clear_inbox.py --after-date 2023-01-01 --before-date 2023-06-30
-
-# Use lotes menores com pausas
-python clear_inbox.py --max-emails 1000 && sleep 300
-```
-
----
-
-<a id="roteiro-do-projeto"></a>
-## 🗺 Roteiro do Projeto
-
-- [X] **`Init`**: Inicializar estrutura do projeto Python e configurar ambiente virtual.
-- [ ] **`Email Connect`**: Implementar conexão com provedores de e-mail (IMAP/SMTP).
-- [ ] **`Parsing`**: Criar módulo para leitura e categorização automática de mensagens.
-- [ ] **`Filtering`**: Implementar regras de filtro para spam, promoções e mensagens desnecessárias.
-- [ ] **`Prioritize`**: Adicionar lógica para identificar e destacar e-mails importantes.
-- [ ] **`CLI / Interface`**: Criar interface de linha de comando para gerenciar caixas de entrada.
-- [ ] **`Automation`**: Automatizar limpeza e organização periódica da caixa de entrada.
-- [ ] **`Dockerize`**: Configurar execução em Docker para desenvolvimento e produção consistentes.
-- [ ] **`Testing`**: Implementar testes unitários e de integração para módulos principais.
-- [ ] **`Logging`**: Adicionar logs detalhados para monitoramento de execução e erros.
-- [ ] **`Optimize`**: Melhorar performance de leitura e categorização de grandes volumes de e-mails.
-- [ ] **`Enhance`**: Adicionar suporte a múltiplos provedores e novas regras de organização.
-
-
----
-
-<a id="contribuindo"></a>
-## 👥 Contribuindo
-=======
 ---
 
 <a id="seguranca"></a>
@@ -330,7 +159,6 @@ python clear_inbox.py --max-emails 1000 && sleep 300
 
 <a id="roteiro-do-projeto"></a>
 ## 🗺 Roteiro do Projeto
->>>>>>> 731fd9e (Changes)
 
 - [X] **`Init`**: Classificação inicial de emails
 - [ ] **`UI`**: Melhorias na interface
@@ -348,22 +176,12 @@ Licença MIT. Consulte o arquivo [LICENSE](LICENSE).
 
 ---
 
-<<<<<<< HEAD
-<a id="agradecimentos"></a>
-## 📚 Agradecimentos
-
-- ⚗️ Flask
-- 🎨 Icons8
-- 🖼️ Skillicons.dev
-- 📧 Inspirado em ferramentas de produtividade e automação de e-mails
-=======
 <a id="aprendizados"></a>
 ## 📚 Aprendizados
 - ⚡ Integração com APIs de email
 - 📱 Desenvolvimento web com Flask e HTML/CSS
 - 🛠️ Boas práticas de organização de código e modularidade
 - 🌐 Automação de workflows com Machine Learning
->>>>>>> 731fd9e (Changes)
 
 ---
 
