@@ -5,8 +5,6 @@
      Uma ferramenta inteligente de gestão de emails que classifica automaticamente suas mensagens como produtivas ou improdutivas, ajudando você a focar no que realmente importa e manter sua caixa de entrada organizada.
   </p>
 
-   
-
   <p align="center"> 
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
