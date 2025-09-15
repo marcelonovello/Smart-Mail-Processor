@@ -1,6 +1,6 @@
 [🇺🇸 English](./README.md)   |   [🇧🇷 Português](./README-pt.md)
 
-<div align="center"> <h1 align="center">📬 CLEAR INBOX</h1>
+<div align="center"> <h1 align="center">Smart Mail Processor 📬</h1>
   <p align="center">
      Uma ferramenta inteligente de gestão de emails que classifica automaticamente suas mensagens como produtivas ou improdutivas, ajudando você a focar no que realmente importa e manter sua caixa de entrada organizada.
   </p>
